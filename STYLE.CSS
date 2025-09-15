@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #000; /* Black background */
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background: #111;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #007bff;
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.sidebar p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+/* CV Button */
+.cv-btn {
+  display: inline-block;
+  margin-bottom: 25px;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cv-btn:hover {
+  background: #0056b3;
+}
+
+/* Navigation */
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin: 12px 0;
+}
+
+.sidebar nav ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 40px;
+  background: #1a1a1a;
+}
+
+/* Section Titles */
+h2 {
+  font-size: 28px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skills-list span {
+  background: #222;
+  padding: 10px;
+  border-left: 4px solid #007bff;
+  border-radius: 5px;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  border: 1px solid #333;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #007bff;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.project-card p {
+  color: #ccc;
+}
+
+/* Links */
+a {
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
